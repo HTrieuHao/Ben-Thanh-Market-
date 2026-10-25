@@ -1,0 +1,292 @@
+/* Trương Kim Phượng: Trang chủ, lịch sử và kiến trúc */
+.tv1-header-badge {
+  display: inline-block;
+  background-color: var(--mau-vang-co);
+  color: var(--mau-den-than);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.hero-trang-chu {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 74px); min-height: 520px;
+  background-image: url('../images/banner/banner-chinh.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-bottom: 4px solid var(--mau-vang-co);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+.luoi-3-cot {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.khoi-diem-nhan {
+  background: var(--mau-trang);
+  border-radius: 8px;
+  padding: 28px 24px;
+  text-align: center;
+  border-top: 4px solid var(--mau-do-gach);
+  box-shadow: var(--bong-do);
+  border: 1px solid var(--mau-vien);
+}
+
+.bieu-tuong-icon {
+  width: 55px;
+  height: 55px;
+  margin: 0 auto 16px auto;
+  background-color: var(--mau-kem-nen);
+  color: var(--mau-do-gach);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  border: 1px solid var(--mau-vang-co);
+}
+
+.khoi-diem-nhan h3 {
+  font-family: var(--font-tieu-de);
+  font-size: 20px;
+  color: var(--mau-do-gach);
+  margin-bottom: 10px;
+}
+
+.khoi-diem-nhan p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 16px;
+}
+
+.khung-faq {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: var(--mau-trang);
+  border-radius: 8px;
+  padding: 25px 30px;
+  box-shadow: var(--bong-do);
+  border: 1px solid var(--mau-vien);
+}
+
+.faq-danh-sach {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.faq-muc {
+  border: 1px solid var(--mau-vien);
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #FAF7F2;
+  transition: all 0.25s ease;
+}
+
+.faq-muc.dang-mo {
+  border-color: var(--mau-do-gach);
+  background-color: var(--mau-trang);
+}
+
+.faq-nut-hoi {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 16px 20px;
+  font-family: var(--font-noi-dung);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--mau-den-than);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.faq-nut-hoi:hover {
+  color: var(--mau-do-gach);
+}
+
+.faq-icon-trang-thai {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--mau-do-gach);
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.faq-muc.dang-mo .faq-icon-trang-thai {
+  transform: rotate(45deg); color: var(--mau-vang-co);
+}
+
+.faq-tra-loi {
+  display: none;
+  padding: 0 20px 18px 20px;
+  font-size: 15px;
+  color: #444;
+  line-height: 1.65;
+  border-top: 1px dashed var(--mau-vien);
+  margin-top: 5px;
+  padding-top: 12px;
+}
+
+.faq-muc.dang-mo .faq-tra-loi {
+  display: block; }
+
+.dong-thoi-gian {
+  position: relative;
+  max-width: 860px;
+  margin: 30px auto;
+  padding-left: 30px;
+  border-left: 3px solid var(--mau-vang-co);
+}
+
+.moc-thoi-gian {
+  position: relative;
+  margin-bottom: 35px;
+  padding-left: 20px;
+}
+
+.moc-thoi-gian::before {
+  content: '';
+  position: absolute;
+  left: -38px;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  background-color: var(--mau-do-gach);
+  border: 3px solid var(--mau-vang-co);
+  border-radius: 50%;
+}
+
+.moc-nam {
+  display: inline-block;
+  background-color: var(--mau-do-gach);
+  color: var(--mau-trang);
+  font-weight: 700;
+  font-size: 14px;
+  padding: 3px 12px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.moc-thoi-gian h3 {
+  font-family: var(--font-tieu-de);
+  font-size: 20px;
+  color: var(--mau-do-gach);
+  margin-bottom: 8px;
+}
+
+.moc-thoi-gian p {
+  font-size: 15px;
+  color: #444;
+}
+
+.luoi-kien-truc-2-cot {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.luoi-4-cong {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.the-cong {
+  background: var(--mau-trang);
+  border: 1px solid var(--mau-vien);
+  border-radius: 8px;
+  padding: 20px;
+  border-left: 5px solid var(--mau-do-gach);
+  box-shadow: var(--bong-do);
+}
+
+.the-cong > img {
+  display: block;
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 14px;
+}
+
+.the-cong h4 {
+  font-family: var(--font-tieu-de);
+  font-size: 18px;
+  color: var(--mau-do-gach);
+  margin-bottom: 6px;
+}
+
+.the-cong span {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--mau-xanh-reu);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.the-cong p {
+  font-size: 14px;
+  color: #555;
+}
+
+.tv1-footer-ghi-chu {
+  font-size: 12px;
+  color: #C2BAA8;
+  margin-top: 6px;
+}
+
+@media screen and (max-width: 992px) {
+  .luoi-3-cot {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .luoi-kien-truc-2-cot {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hero-trang-chu {
+    height: 55vh;
+    min-height: 320px;
+  }
+  .luoi-3-cot {
+    grid-template-columns: 1fr;
+  }
+  .luoi-4-cong {
+    grid-template-columns: 1fr;
+  }
+  .dong-thoi-gian {
+    padding-left: 20px;
+  }
+  .moc-thoi-gian::before {
+    left: -28px;
+  }
+  .khung-faq {
+    padding: 18px 15px;
+  }
+  .faq-nut-hoi {
+    font-size: 14px;
+    padding: 12px 14px;
+  }
+}
+
+.anh-kien-truc > img {
+  height: auto;
+  object-fit: contain;
+}
