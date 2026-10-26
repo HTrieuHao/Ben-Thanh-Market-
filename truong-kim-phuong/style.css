@@ -290,3 +290,29 @@
   height: auto;
   object-fit: contain;
 }
+
+
+.bieu-tuong-icon svg {
+  width: 32px;
+  height: 32px;
+  fill: var(--mau-do-gach);
+}
+
+
+.hinh-1-1 > img {
+  display: block;
+  width: 100%;
+  height: auto !important;
+  max-height: none;
+  object-fit: contain;
+}
+
+
+.anh-phu-dieu > img {
+  display: block;
+  width: 100%;
+  height: auto !important;
+  max-height: none;
+  object-fit: contain;
+}
+

@@ -308,3 +308,35 @@
 .luoi-nhip-song .the-bai-viet > img {
   height: 260px;
 }
+
+.khoi-poster-tv2 img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 75vh;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+
+.nguon-anh {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  z-index: 2;
+  max-width: calc(100% - 16px);
+  margin: 0;
+  padding: 4px 7px;
+  border-radius: 3px;
+  background: rgba(24, 27, 25, 0.72);
+  color: #fff;
+  font-size: 10px;
+  line-height: 1.25;
+  text-decoration: none;
+}
+
+.nguon-anh span {
+  color: #f1d7a2;
+}
+
+
